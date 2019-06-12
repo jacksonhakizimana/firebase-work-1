@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.firstfirebase">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/student"
+        android:label="Online Study"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Biology"
+            android:parentActivityName=".Courses"></activity>
+        <activity android:name=".Datamining"
+            android:parentActivityName=".Courses"/>
+        <activity android:name=".Chemistry"
+            android:parentActivityName=".Courses"/>
+        <activity android:name=".Mobile"
+            android:parentActivityName=".Courses"/>
+        <activity android:name=".Physics"
+            android:parentActivityName=".Courses"/>
+        <activity android:name=".Notes"
+            android:parentActivityName=".Courses"/>
+        <activity
+            android:name=".RegistrationForm"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Courses"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
